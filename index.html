@@ -1,5 +1,23 @@
 <html>
 <head>
+  <script type="text/javascipt">
+function EnableDisableTextBox(){
+var chkYes = document.getElementById("chkYes");
+var fact= document.getElementById("fact");
+fact.disabled = chkYes.checked ? false : true;
+if (!fact.disabled){
+fact.focus();
+}
+}
+</script>
+<style>
+#fact{
+border:2 px outset red;
+}
+#chkYes{
+}
+</style>
+</head>
 <body>
   <center><form>
 First Name-<input type="text" name="FIRST NAME"><br>
